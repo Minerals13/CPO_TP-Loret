@@ -17,21 +17,25 @@ public class TP2_Bieres_LORET {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        BouteilleBiere uneBiere = new BouteilleBiere() ;
-        uneBiere.nom = "Cuvée des trolls";
-        uneBiere.degreAlcool = 7.0 ;
-        uneBiere.brasserie="Dubuisson";
-        uneBiere.ouverte=false;
+        BouteilleBiere uneBiere = new BouteilleBiere("Leffe", 6.6,"Abbaye de Leffe") ;
+        BouteilleBiere deuxBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson") ;
+        BouteilleBiere troisBiere = new BouteilleBiere ("1664", 6.0, "1664 Corp");
+        BouteilleBiere quatreBiere = new BouteilleBiere ("8.6", 8.6, "8.6 Corp");
         
-        uneBiere.lireEtiquette();
+        uneBiere.lireEtiquette() ;
+        deuxBiere.lireEtiquette ();
+        troisBiere.lireEtiquette ();
+        quatreBiere.lireEtiquette ();
         
-        BouteilleBiere deuxbieres = new BouteilleBiere() ;
-        deuxbieres.nom="Leffe";
-        deuxbieres.degreAlcool=6.6;
-        deuxbieres.brasserie="Abbaye de Leffe";
-        deuxbieres.lireEtiquette();
+        uneBiere.Décapsuler();
+        
+    
+        
+        
+        
+        
                 
         
     }
-    
 }
+    
