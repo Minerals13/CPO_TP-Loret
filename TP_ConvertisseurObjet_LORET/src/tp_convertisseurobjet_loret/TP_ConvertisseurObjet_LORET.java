@@ -14,7 +14,22 @@ public class TP_ConvertisseurObjet_LORET {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Convertisseur conversion = new Convertisseur ();
+        
+        
+        double r1; {
+        r1=conversion.CelviusVersFarenheit(20);
+        }
+        
+        
+        System.out.println(r1);
+        System.out.println(conversion);
+        
+        
+        
+    
+    
+    
     }
     
 }
