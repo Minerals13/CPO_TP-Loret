@@ -9,11 +9,17 @@ package tp3_relation_loret;
  * @author emili
  */
 public class Magicien extends Personnage {
-    boolean cheval;
+    boolean confirmé;
     
     public Magicien (String n, int i, boolean a) {
         super(n, i);
-        cheval = a; 
+        confirmé = a; 
             
     }
+
+    public void setConfirmé(boolean confirmé) {
+        this.confirmé = confirmé;
+    }
+    
+        
 }

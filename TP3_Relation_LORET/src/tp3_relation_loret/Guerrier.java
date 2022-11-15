@@ -9,11 +9,16 @@ package tp3_relation_loret;
  * @author emili
  */
 public class Guerrier extends Personnage {
-    boolean confirmé;
+    boolean cheval;
     
-    public Magicien (String n, int i, boolean a) {
+    public Guerrier (String n, int i, boolean a) {
         super(n, i);
-        confirmé = a; 
+        cheval = a; 
             
     }
+
+    public void setCheval(boolean cheval) {
+        this.cheval = cheval;
+    }
+    
 }
