@@ -44,7 +44,12 @@ public class TP3_Relation_LORET {
             System.out.println(recapArme.get(i));
             
         }
-        
+        Magicien Mas = new Magicien ("Masdak", 50, true)
+        Magicien Dumb = new Magicien ("Dumbledore", 15, false)
+                
+        Guerrier John = new Guerrier ("John Snow", 60, true)
+        Guerrier Ary = new Guerrier ("Arya Stark",20, false)
+                
         
     }
     
