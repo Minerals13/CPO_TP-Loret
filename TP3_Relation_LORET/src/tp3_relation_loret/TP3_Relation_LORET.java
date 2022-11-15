@@ -4,6 +4,11 @@
  */
 package tp3_relation_loret;
 
+import Armes.Arme;
+import Armes.baton;
+import Armes.épée;
+import java.util.ArrayList;
+
 /**
  *
  * @author emili
@@ -17,11 +22,28 @@ public class TP3_Relation_LORET {
         
         
         
-        épée Exca = new épée(Excalibur, 7, 5);
-        épée Dura = new épée(Durandal, 4, 7);
+        épée Exca = new épée("Excalibur", 7, 5);
+        épée Dura = new épée("Durandal", 4, 7);
         
-        baton Chên = new baton(Chêne, 4, 7);
-        baton Char = new baton(Charme, 5, 6);
+        baton Che = new baton("Chêne", 4, 7);
+        baton Cha = new baton("Charme", 5, 6);
+        
+        ArrayList<Arme> recapArme = new ArrayList();
+        recapArme.add(Exca);
+        recapArme.add(Dura);
+        recapArme.add(Cha);
+        recapArme.add(Che);
+        
+        
+        int tailleArme;
+        tailleArme = recapArme.size();
+        //tailleArme = tailleArme-1;
+        
+        for (int i=0;i<tailleArme;i++) {
+            
+            System.out.println(recapArme.get(i));
+            
+        }
         
         
     }
